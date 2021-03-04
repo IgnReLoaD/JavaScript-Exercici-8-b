@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- ENUNCIATS:    
+
+    Exercici-1: Mostrar per Consola "Hola mundo"                           --- > JA FET
+    Exercici-2: Crear un Alert per mostrar el nom                          --- > JA FET
+    Exercici-3: Crear una variable pel nom i una pel cognom                --- > JA FET
+    Exercici-4: Crear dues variables amb dos números i fer la suma         --- > JA FET
+    Exercici-5: Crear variable 'nota_examen' i mostrar alert Aprovat o no  --- > JA FET     
+    Exercici-6: Reemplaçar paraules/lletres (blau per verd / o per u)      --- > JA FET
+    Exercici-7: Llistats, mostrar per pantalla cada element i la posició   --- > JA FET
+    Exercici-8: Calculadora, per pantalla, i controlant div per 0          --- > JA FET
+
+    ... exercici-8-b:  calculadora amb diseny gràfic (lliure)                       -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author"      content="Ignasi Ortiz">
+    <meta name="keywords"    content="JavaScript learning arrays functions bucles">
+    <meta name="description" content="IT Academy - modul 8 JavaScript"> 
+
+    <!-- Bootstrap ... amb CDN (enllaços) ------------------------------------------  -->
+    <link   href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+            crossorigin="anonymous">
+
+    <!-- aquí llegirem fitxer per aplicar estils -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>JavaScript ex.8-b</title>
+</head>
+
+<body>
+    <h1>IT Academy - exercici 8-b de JS</h1>
+    <p>Nivell 3: calculadora gràfica (amb bootstrap)</p>    
+    <br>
+    <br>    
+    <div class="container">
+        <outputs class="row">            
+            <div id="mostrarDatos" class="col bg-screen">&nbsp; </div>
+        </outputs>
+        <inputs class="row">
+            <inputBtn class="col-3 btn bg-button">C  </inputBtn>
+            <inputBtn class="col-3 btn bg-button">sqr</inputBtn>
+            <inputBtn class="col-3 btn bg-button">pot</inputBtn>
+            <inputBtn class="col-3 btn bg-button">/  </inputBtn>
+            <inputBtn class="col-3 btn bg-button">7  </inputBtn>
+            <inputBtn class="col-3 btn bg-button">8  </inputBtn>
+            <inputBtn class="col-3 btn bg-button">9  </inputBtn>
+            <inputBtn class="col-3 btn bg-button">x </inputBtn>        
+            <inputBtn class="col-3 btn bg-button">4</inputBtn>
+            <inputBtn class="col-3 btn bg-button">5</inputBtn>
+            <inputBtn class="col-3 btn bg-button">6</inputBtn>
+            <inputBtn class="col-3 btn bg-button">-</inputBtn>
+            <inputBtn class="col-3 btn bg-button">1</inputBtn>
+            <inputBtn class="col-3 btn bg-button">2</inputBtn>
+            <inputBtn class="col-3 btn bg-button">3</inputBtn>
+            <inputBtn class="col-3 btn bg-button">+</inputBtn>        
+            <inputBtn class="col-3 btn bg-button">0</inputBtn>
+            <inputBtn class="col-3 btn bg-button">,</inputBtn>
+            <inputBtn class="col-6 btn bg-accept">=</inputBtn>
+        </inputs>
+    </div>
+
+    
+    <br>
+    <br>
+    <input type='button' class='button' id="calcular" value='8._ Calcular' onClick='calcular()'/> 
+    <!-- crida al JS -->
+    <!-- <input type='button' class='button' id="actualitzar" value='Tornar a jugar' onclick='location.reload()' />   -->
+    <input type='button' class='button' id="actualitzar" value='Tornar a jugar' onclick='actualizar()' />  
+    <!-- crida al JS -->
+
+
+    <!-- ________________________________ SCRIPTS bootstrap i propi _______________________________________________________ -->
+
+    <!-- enllaços CDN (online):  jQuery, popper, bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+       crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+       crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+       crossorigin="anonymous"></script>    
+
+    <script src="scripts/main.js" type="text/javascript"></script>
+    <!-- referencia al fitxer JS - recomanable definir al final just abans del body 
+    perquè sino no coneix encara el HTML i no sap on trobar les ubicacions dins la pagina -->
+</body>
+</html>

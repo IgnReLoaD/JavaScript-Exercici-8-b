@@ -1,0 +1,113 @@
+
+.container{
+  background-color: gray;
+  border-radius: 5px;
+  border-color: black;
+  border-style: solid ;
+  border-width: thin;
+  margin-left: 100px;
+  width: 40%;
+}
+
+.btn:hover {
+  color: yellow;
+  font-weight: bold;
+}
+
+.bg-screen{
+  margin: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: darkslategrey;
+  color: greenyellow;
+  border-color: darkgreen;
+  border-style: solid ;
+  border-width: thin;
+  width: 40%;
+  height: 50px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.bg-button{
+  background-color: lightskyblue;
+  border-color: gray;
+  border-style: solid;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.bg-accept{
+  background-color: peru;
+  border-color: saddlebrown;
+  border-style: solid;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 
+body{
+  background-color: peru;
+  color: white;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  
+} */
+
+h1{
+  color: darkred;
+  font-size: 20px;
+}
+
+#actualitzar{
+  display: none; 
+} 
+
+.ressaltat{
+  color: blue;
+  border-bottom: 1px dotted blue;
+}
+.button {
+  margin-left: 30px;
+  padding: 10px 35px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #a80b2d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 3px 3px #999;
+}
+
+
+.button:active {
+  background-color: lightgray;
+  box-shadow: 3px 3px #666;
+  transform: translateY(3px);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: whitesmoke;
+  color: blue;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px 5px;
+  font-size: 10px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
