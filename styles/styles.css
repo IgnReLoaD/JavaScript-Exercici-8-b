@@ -5,8 +5,8 @@
   border-color: black;
   border-style: solid ;
   border-width: thin;
-  margin-left: 100px;
-  width: 40%;
+  margin-left: 20px;
+  width: 90%;
 }
 
 .btn:hover {
@@ -21,11 +21,13 @@
   color: greenyellow;
   border-color: darkgreen;
   border-style: solid ;
+  border-radius: 6px;
   border-width: thin;
   width: 40%;
   height: 50px;
   text-align: right;
   font-weight: bold;
+  font-size: 30px;
 }
 
 .bg-button{
@@ -33,21 +35,37 @@
   border-color: gray;
   border-style: solid;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 12px;
+  border-width: thick;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bg-clrscr{
+  background-color: rgb(196, 128, 111);
+  /* border-color: saddlebrown; */
+  border-color: grey;
+  border-style: solid;
+  border-width: thick;
+  height: 50px;
+  border-radius: 12px;
   text-align: center;
   font-weight: bold;
 }
 
 .bg-accept{
   background-color: peru;
-  border-color: saddlebrown;
+  /* border-color: saddlebrown; */
+  border-color: grey;
   border-style: solid;
+  border-width: thick;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
   margin-bottom: 20px;
   font-weight: bold;
 }
+
 
 /* 
 body{
@@ -59,56 +77,4 @@ body{
 h1{
   color: darkred;
   font-size: 20px;
-}
-
-#actualitzar{
-  display: none; 
-} 
-
-.ressaltat{
-  color: blue;
-  border-bottom: 1px dotted blue;
-}
-.button {
-  margin-left: 30px;
-  padding: 10px 35px;
-  font-size: 15px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #a80b2d;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 3px 3px #999;
-}
-
-
-.button:active {
-  background-color: lightgray;
-  box-shadow: 3px 3px #666;
-  transform: translateY(3px);
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: whitesmoke;
-  color: blue;
-  text-align: center;
-  border-radius: 8px;
-  padding: 5px 5px;
-  font-size: 10px;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }
